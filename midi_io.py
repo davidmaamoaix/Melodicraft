@@ -18,8 +18,11 @@ def read(path):
 	for track in file:
 		curr = []
 		for element in track:
+
+			'''A single note is treated as a chord with one element.'''
 			if type(element) == note.Note:
 				curr.append([Note(element)])
+
 			if type(element) == chord.Chord:
 				curr.append([Note(i) for i in element])
 

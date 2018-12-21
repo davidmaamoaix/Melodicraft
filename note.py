@@ -6,6 +6,7 @@ __all__ = [
 __author__ = 'DavidM'
 
 class Note:
+	'''Data structure for storing a note.'''
 
 	def __init__(self, note):
 		'''Initalize a Note
