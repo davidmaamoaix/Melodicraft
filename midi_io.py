@@ -9,8 +9,10 @@ from music21 import *
 
 from note import Note
 
-def read(path):
-	'''Reads a midi file.'''
+def read(path: str) -> list:
+	'''Reads a midi file.
+	Outputs a list of tracks, which contain sequences of notes.
+	'''
 	file = converter.parse(path)
 	tracks = []
 

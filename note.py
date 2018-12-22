@@ -14,7 +14,7 @@ class Note:
 		note: int, a music21 instance of a note.
 		'''
 		self._note = 1
-		self._duration = 2
+		self._startTick = 2
 
 	@property
 	def note(self):
@@ -25,9 +25,9 @@ class Note:
 		self._note = note
 
 	@property
-	def duration(self):
-		return self._duration
+	def startTick(self):
+		return self._startTick
 
-	@duration.setter
-	def duration(self, duration):
-		self._duration = duration
+	@startTick.setter
+	def startTick(self, startTick):
+		self._startTick = startTick
